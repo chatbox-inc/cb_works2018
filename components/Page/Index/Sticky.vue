@@ -7,65 +7,65 @@
 </template>
 
 <style lang="scss" scoped>
-    @import "~assets/scss/layout/_layout.scss";
-    @import "~assets/scss/object/component/_container.scss";
+@import "~assets/scss/layout/_layout.scss";
+@import "~assets/scss/object/component/_container.scss";
 
-    .p-contact {
-        &__infoWrapper {
-            display: block;
-            position: sticky;
-            position: -webkit-sticky;
-            bottom: 0;
-            width: 100%;
-            height: 70px;
-            z-index: 10000;
-            background: #fff;
-            text-align: center;
-            line-height: 70px;
-            transition: all .3s;
+.p-contact {
+  &__infoWrapper {
+    display: block;
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 10000;
+    background: #fff;
+    text-align: center;
+    line-height: 70px;
+    transition: all 0.3s;
 
-            &:hover {
-                background: #C3504F;
-                transition: all .3s;
+    &:hover {
+      background: #c3504f;
+      transition: all 0.3s;
 
-                & > a > span {
-                    color: #fff;
-                }
+      & > a > span {
+        color: #fff;
+      }
 
-                & > a > span::before {
-                    background: url("/images/icon_mail-white.svg") no-repeat center;
-                }
-            }
-        }
-
-        &__info {
-            display: inline-block;
-            width: 100%;
-            position: relative;
-            font-size: 1.6rem;
-            color: #C3504F;
-            text-decoration: none;
-
-            @include desktop {
-                font-size: 1.8rem;
-            }
-        }
-
-        &__infoText {
-            &::before {
-                display: inline-block;
-                content: "";
-                width: 1.8rem;
-                height: 1.8rem;
-                background: url("/images/icon_mail.svg") no-repeat center;
-                background-size: contain;
-                transform: translate(-0.5rem, .3rem);
-                @include desktop {
-                    width: 2rem;
-                    height: 2rem;
-                    transform: translate(-0.5rem, .35rem);
-                }
-            }
-        }
+      & > a > span::before {
+        background: url("/images/icon_mail-white.svg") no-repeat center;
+      }
     }
+  }
+
+  &__info {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    font-size: 1.6rem;
+    color: #c3504f;
+    text-decoration: none;
+
+    @include desktop {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__infoText {
+    &::before {
+      display: inline-block;
+      content: "";
+      width: 1.8rem;
+      height: 1.8rem;
+      background: url("/images/icon_mail.svg") no-repeat center;
+      background-size: contain;
+      transform: translate(-0.5rem, 0.3rem);
+      @include desktop {
+        width: 2rem;
+        height: 2rem;
+        transform: translate(-0.5rem, 0.35rem);
+      }
+    }
+  }
+}
 </style>
