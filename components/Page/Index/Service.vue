@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Service-Section :item="item" :index="index" v-for="(item,index) in serviceItems" :key="key"></Service-Section>
+    <Service-Section :item="item" :index="index" v-for="(item,index) in serviceItems" :key="index"></Service-Section>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 import ServiceSection from "./Service/Section.vue";
 export default {
   props: {
-    serviceItems: Object
+    serviceItems: Array
   },
   data() {
     return {};

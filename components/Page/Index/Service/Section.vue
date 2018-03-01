@@ -20,7 +20,7 @@
                 <div class="p-service__description">
                     <h3 class="p-service__descriptionTitle">{{ item.heading }}</h3>
                     <div class="p-service__descriptionText">
-                        <span class="p-service__descriptionAPartOfText" v-for="text in item.texts">{{ text }}</span>
+                        <span class="p-service__descriptionAPartOfText" v-html=" marked(item.texts) "></span>
                     </div>
                 </div>
                 <div class="p-service__example">
@@ -36,6 +36,9 @@
 
 
 <script>
+
+import marked from 'marked'
+
 export default {
   props: ["item", "index"],
   computed: {
@@ -55,7 +58,13 @@ export default {
       obj[this.item.number] = true;
       return obj;
     }
+  },
+  methods:{
+    marked(text){
+      return marked(text, { sanitize: true })
+    }
   }
+
 };
 </script>
 

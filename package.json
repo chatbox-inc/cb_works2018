@@ -8,6 +8,7 @@
     "@nuxtjs/pwa": "latest",
     "duplexer": "^0.1.1",
     "json-loader": "^0.5.7",
+    "marked": "^0.3.17",
     "node-sass": "^4.6.1",
     "nuxt": "latest",
     "path-dirname": "^1.0.2",
