@@ -18,11 +18,11 @@ export default {
     return {};
   },
   computed: {
-    serviceItems(){
-      return this.$store.state.serviceItems
+    serviceItems() {
+      return this.$store.state.serviceItems;
     },
-    listItems(){
-      return this.$store.state.listItems
+    listItems() {
+      return this.$store.state.listItems;
     }
   },
   components: {

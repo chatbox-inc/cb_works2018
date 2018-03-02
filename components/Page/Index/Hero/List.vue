@@ -121,7 +121,7 @@ export default {
     }
   }
   &__listItemDescription {
-    padding: 1.5rem 1.5rem 2rem;;
+    padding: 1.5rem 1.5rem 2rem;
     @include desktop {
       padding: 2rem;
     }
