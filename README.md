@@ -1,15 +1,21 @@
-# works.pwa
+# chatbox works site 
 
-Netlify
-https://app.netlify.com/sites/cb-works2018/overview
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
+http://works.chatbox-inc.com/
 
-## Build Setup
+https://app.netlify.com/sites/cb-works2018
 
-``` bash
-$ npm install 
+## 使い方
 
+サーバの起動
+
+````
 $ npm run dev
-```
+````
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+コードのフォーマット
+
+````
+$ npm run fix
+````
