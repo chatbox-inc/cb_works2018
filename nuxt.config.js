@@ -1,6 +1,6 @@
 const meta = {
     description: "株式会社chatboxは大阪堺筋本町の小さなWeb制作会社です。Web制作や技術顧問、イベント運営など、最新のWeb製作技術を活かした様々な活動を行っています。",
-    title: "株式会社 chatboxはWebのこれからを語り合う会社です。| 株式会社 chatbox(チャットボックス)"
+    title: "事業内容 | 株式会社 chatbox(チャットボックス)"
 }
 
 module.exports = {
