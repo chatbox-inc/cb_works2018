@@ -5,6 +5,7 @@
   "author": "t.goto <t.goto@chatbox-inc.com>",
   "private": true,
   "dependencies": {
+    "@nuxtjs/google-analytics": "^2.0.2",
     "json-loader": "^0.5.7",
     "marked": "^0.3.17",
     "node-sass": "^4.6.1",
