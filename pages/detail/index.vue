@@ -25,12 +25,12 @@ export default {
     }
   },
   components: {
-      DetailDescription,
-      DetailCase,
-      DetailFirst,
-      DetailContact,
-      DetailReason,
-  },
+    DetailDescription,
+    DetailCase,
+    DetailFirst,
+    DetailContact,
+    DetailReason
+  }
 };
 </script>
 

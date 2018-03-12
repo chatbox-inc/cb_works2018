@@ -36,8 +36,8 @@ export default {
   computed: {
     thumbStyle() {
       return { backgroundImage: `url('/images/serviceHeading_create.jpg')` }; // http://placehold.it/350x350
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -104,7 +104,7 @@ export default {
     }
   }
   &__importantText {
-    color: #C3504F;
+    color: #c3504f;
     font-size: 18px;
     line-height: 35px;
     font-weight: bold;
@@ -115,7 +115,7 @@ export default {
     }
   }
   &__text {
-    color: #4D4B4D;
+    color: #4d4b4d;
     font-size: 15px;
     line-height: 32px;
     @include desktop {
@@ -125,8 +125,8 @@ export default {
   }
   &__list {
     @include c-container;
-    color: #4D4B4D;
-    background-color: #FAF7F7;
+    color: #4d4b4d;
+    background-color: #faf7f7;
     margin-bottom: 10px;
     position: relative;
     @include desktop {
@@ -137,7 +137,7 @@ export default {
       top: 0;
       text-align: center;
       color: #ffffff;
-      background-color: #C3504F;
+      background-color: #c3504f;
       width: 45px;
       height: 45px;
       line-height: 45px;
@@ -164,10 +164,8 @@ export default {
       }
     }
     &DrawingWrap {
-
     }
     &Drawing {
-
     }
     &BoldText {
       font-weight: bold;
