@@ -37,6 +37,10 @@ export default {
 @import "~assets/scss/layout/_layout.scss";
 @import "~assets/scss/object/component/_container.scss";
 .p-description {
+  margin-bottom: 50px;
+  @include desktop {
+    margin-bottom: 60px;
+  }
   &__background {
     background-repeat: no-repeat;
     background-size: cover;
