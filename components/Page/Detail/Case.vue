@@ -40,6 +40,10 @@ export default {
 @import "~assets/scss/object/component/_container.scss";
 
 .p-case {
+  margin-bottom: 50px;
+  @include desktop {
+    margin-bottom: 70px;
+  }
   &__background {
     background-repeat: no-repeat;
     background-size: cover;
