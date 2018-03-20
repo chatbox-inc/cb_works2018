@@ -1,18 +1,13 @@
 <template>
   <div class="p-description__list">
-    <div class="p-description__listIcon">制作</div>
-    <div class="p-description__listInner">
-      <div class="p-description__listTitleWrap">
-        <div class="p-description__listTitle">外注を行わない一貫した制作フロー（端的に。ドメインを明示的に）</div>
-      </div>
-      <div class="p-description__listDrawingWrap">
-        <span class="p-description__listDrawing"></span>
-        <span class="p-description__listDrawing"></span>
-        <span class="p-description__listDrawing"></span>
-        <span class="p-description__listDrawing"></span>
-      </div>
-      <p class="p-description__listBoldText">企画から運用まで社内で行うのでコミュニケーションを円滑に安心して進捗をお任せ頂けます。(メリットを伝える)</p>
-      <p class="p-description__listText">chatboxでは制作はすべて一貫して社内で対応。だからこそ、進捗を明瞭にし、安心して頂けるコミュニケーションを心がけております。（ドメインとメリットを踏まえた上で詳細を詳しく。）</p>
+    <div class="p-description__listHeading">
+      <div class="p-description__listHeadingDomain">制作</div>
+      <div class="p-description__listHeadinglistTitle">外注を行わない一貫した制作フロー（端的に。ドメインを明示的に）</div>
+    </div>
+    <div class="p-description__listBody">
+      <div class="p-description__listIcons"></div>
+      <div class="p-description__listMelit">企画から運用まで社内で行うのでコミュニケーションを円滑に安心して進捗をお任せ頂けます。(メリットを伝える)</div>
+      <div class="p-description__listDescription">chatboxでは制作はすべて一貫して社内で対応。だからこそ、進捗を明瞭にし、安心して頂けるコミュニケーションを心がけております。（ドメインとメリットを踏まえた上で詳細を詳しく。）</div>
     </div>
   </div>
 </template>
@@ -23,76 +18,86 @@
 @import "~assets/scss/object/component/_container.scss";
 .p-description {
   &__list {
-    @include c-container;
-    color: #4d4b4d;
-    background-color: #faf7f7;
-    margin-bottom: 10px;
-    position: relative;
+    margin-bottom: 20px;
+    border-right: 2px solid #c3504f;
+    background: #faf7f7;
     @include desktop {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
-    &Icon {
-      position: absolute;
-      top: 0;
-      left: 0;
-      text-align: center;
-      color: #ffffff;
-      background-color: #c3504f;
-      width: 45px;
-      height: 45px;
-      line-height: 45px;
-      font-size: 14px;
+  }
+  &__listHeading {
+    display: table;
+    margin-bottom: 20px;
+    @include desktop {
+      margin-bottom: 0;
+    }
+  }
+  &__listHeadingDomain {
+    display: table-cell;
+    box-sizing: border-box;
+    min-width: 60px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    background: #c3504f;
+
+    @include desktop {
+      min-width: 80px;
+      height: 80px;
+      font-size: 2.5rem;
+      font-weight: normal;
+    }
+  }
+  &__listHeadinglistTitle {
+    display: table-cell;
+    padding-left: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.4;
+    vertical-align: middle;
+    @include desktop {
+      padding-left: 30px;
+      font-size: 2.4rem;
+    }
+  }
+  &__listBody {
+    padding: 0 20px 30px;
+    @include desktop {
+      padding: 0 80px 30px;
+    }
+  }
+  &__listIcons {
+    margin-bottom: 20px;
+    width: 100%;
+    background: url("http://placehold.it/600x300");
+    background-position: center;
+    background-size: cover;
+
+    &::before {
+      display: block;
+      content: "";
+      padding: 20%;
       @include desktop {
-        width: 75px;
-        height: 75px;
-        line-height: 75px;
-        font-size: 25px;
+        padding: 10%;
       }
     }
-    &Inner {
-      @include desktop {
-        margin: 0 12%;
-      }
+  }
+  &__listMelit {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    @include desktop {
+      font-size: 1.7rem;
     }
-    &TitleWrap {
-      height: 45px;
-      display: table-cell;
-      vertical-align: middle;
-      @include desktop {
-        height: 75px;
-      }
-    }
-    &Title {
-      font-weight: bold;
-      font-size: 15px;
-      margin: 0 50px;
-      @include desktop {
-        font-size: 25px;
-        margin: 0;
-      }
-    }
-    &DrawingWrap {
-    }
-    &Drawing {
-    }
-    &BoldText {
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 30px;
-      margin-bottom: 20px;
-      @include desktop {
-        font-size: 17px;
-        line-height: 24px;
-      }
-    }
-    &Text {
-      line-height: 32px;
-      padding-bottom: 28px;
-      @include desktop {
-        font-size: 15px;
-        line-height: 30px;
-        padding-bottom: 35px;
-      }
+  }
+  &__listDescription {
+    line-height: 2.2;
+    @include desktop {
+      line-height: 2;
     }
   }
 }
