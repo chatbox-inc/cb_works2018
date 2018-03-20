@@ -22,7 +22,7 @@ import ReasonItem from "./Reason/Item.vue";
 export default {
   computed: {
     thumbStyle() {
-      return { backgroundImage: `url('/images/detail/reason.jpg')` };
+      return { backgroundImage: "url('/images/detail/reason.jpg')" };
     }
   },
   components: {

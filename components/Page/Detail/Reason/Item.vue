@@ -1,5 +1,5 @@
 <template>
-  <a class="p-reason__item" href="">
+  <a class="p-reason__item" href="#">
     <div class="p-reason__itemThumb"></div>
     <div class="p-reason__itemDescription">{{ text(index) }}</div>
     <div class="p-reason__itemIcon"></div>
@@ -40,6 +40,10 @@ export default {
       width: 250px;
       height: auto;
       margin-bottom: 0;
+    }
+
+    &:hover {
+      opacity: 0.9;
     }
   }
   &__itemThumb {
