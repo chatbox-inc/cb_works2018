@@ -12,7 +12,7 @@
 <script>
 import DetailDescription from "~/components/Page/Detail/Description.vue";
 import DetailCase from "~/components/Page/Detail/Case.vue";
-import DetailFirst from "~/components/Page/Detail/First.vue";
+import DetailFirst from "~/components/Page/Detail/Faq.vue";
 import DetailSticky from "~/components/Page/Index/Sticky.vue";
 import DetailContact from "~/components/Page/Index/Contact.vue";
 import DetailReason from "~/components/Page/Detail/Reason.vue";
