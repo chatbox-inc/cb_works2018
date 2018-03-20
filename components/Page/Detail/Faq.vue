@@ -30,17 +30,14 @@
 <style lang="scss" scoped>
 @import "~assets/scss/layout/_layout.scss";
 @import "~assets/scss/object/component/_container.scss";
+@import "~assets/scss/object/component/_title.scss";
 
 .p-faq {
   &__inner {
     @include c-detailContainer;
   }
   &__title {
-    text-align: center;
-    font-weight: bold;
-    font-size: 2.5rem;
-    line-height: 1.8;
-    margin-bottom: 45px;
+    @include secTitle;
   }
   &__lists {
   }

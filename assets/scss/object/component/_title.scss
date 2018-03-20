@@ -1,0 +1,13 @@
+@import "../../layout/layout";
+
+@mixin secTitle($color:#4d4b4d) {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: $color;
+
+  @include desktop {
+    font-size: 2.5rem;
+  }
+}

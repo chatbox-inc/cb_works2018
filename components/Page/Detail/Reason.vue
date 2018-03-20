@@ -7,8 +7,8 @@
               chatboxの<br>
               技術力と経験値が高い理由
           </h2>
-          <p class="p-reason__text">chatboxではWeb制作の他にもこういうことやってるから技術力や経験値が高いんですよって感じで、冒頭に入れていたchatboxの３つのできることの裏付け・説得力がますようなライティングをお願いします。</p>
-          <div class="p-reason__items">
+          <p class="p-reason__description">chatboxではWeb制作の他にもこういうことやってるから技術力や経験値が高いんですよって感じで、冒頭に入れていたchatboxの３つのできることの裏付け・説得力がますようなライティングをお願いします。</p>
+          <div class="p-reason__lists">
             <reason-item v-for="index in 3" :key="index" :index="index"></reason-item>
           </div>
         </div>
@@ -22,7 +22,7 @@ import ReasonItem from "./Reason/Item.vue";
 export default {
   computed: {
     thumbStyle() {
-      return { backgroundImage: `url('/images/serviceHeading_create.jpg')` }; // 現在仮画像
+      return { backgroundImage: `url('/images/detail/reason.jpg')` };
     }
   },
   components: {
@@ -34,6 +34,7 @@ export default {
 <style lang="scss" scoped>
 @import "~assets/scss/layout/_layout.scss";
 @import "~assets/scss/object/component/_container.scss";
+@import "~assets/scss/object/component/_title.scss";
 
 .p-reason {
   &__background {
@@ -44,37 +45,39 @@ export default {
     background: rgba(195, 80, 79, 0.7);
   }
   &__inner {
-    @include c-container;
-    padding-top: 32px;
+    @include c-detailContainer;
+    padding-top: 30px;
     @include desktop {
-      padding-top: 35px;
+      padding-top: 60px;
     }
   }
   &__title {
-    color: #ffffff;
-    font-size: 30px;
+    color: #fff;
+    font-size: 2.5rem;
     line-height: 50px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 30px;
   }
-  &__text {
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 36px;
+  &__description {
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 2;
     margin-bottom: 30px;
     @include desktop {
       margin-bottom: 60px;
     }
   }
-  &__items {
+  &__lists {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding-bottom: 70px;
+    justify-content: space-between;
+    padding-bottom: 50px;
     @include desktop {
+      margin: 0 auto;
+      max-width: 830px;
       flex-wrap: nowrap;
-      padding-bottom: 135px;
+      padding-bottom: 80px;
     }
   }
 }

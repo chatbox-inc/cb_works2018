@@ -110,7 +110,7 @@
     width: calc(100% - 40px);
     background: #fff;
     text-decoration: none;
-    color: #47494e;
+    color: #4d4b4d;
     position: relative;
 
     @include desktop {
