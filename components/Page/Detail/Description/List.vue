@@ -39,7 +39,8 @@
     height: 60px;
     text-align: center;
     vertical-align: middle;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+    font-weight: bold;
     color: #fff;
     background: #c3504f;
 
@@ -47,6 +48,7 @@
       min-width: 80px;
       height: 80px;
       font-size: 2.5rem;
+      font-weight: normal;
     }
   }
   &__listHeadinglistTitle {
@@ -54,6 +56,7 @@
     padding-left: 10px;
     font-size: 1.5rem;
     font-weight: bold;
+    line-height: 1.4;
     vertical-align: middle;
     @include desktop {
       padding-left: 30px;

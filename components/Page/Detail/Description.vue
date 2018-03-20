@@ -10,7 +10,7 @@
     </div>
     <div class="p-description__inner">
       <div class="p-description__intro">
-        <div class="p-description__introTitle">複雑化するシステム構築の課題を、最新の制作技術でしっかりサポート</div>
+        <div class="p-description__introTitle">複雑化するシステム構築の課題を、最新の制作技術でしっかりサポート複雑化するシステム構築の課題を、最新の制作技術でしっかりサポート</div>
         <p class="p-description__introDescription">複雑化するシステム構築の課題を、最新の制作技術でしっかりサポート多様化するニーズや、複雑化するシステム構築の課題を、最新の制作技術でしっかりサポート。Web制作に関するあらゆる相談に対応出来るよう、経験豊富なスタッフが親身に対応にあたります。</p>
       </div>
       <description-list v-for="key in 3" :key="key"></description-list>
@@ -105,11 +105,12 @@ export default {
   &__introTitle {
     color: #c3504f;
     font-size: 1.8rem;
-    line-height: 2;
     font-weight: bold;
+    line-height: 1.8;
     margin-bottom: 15px;
     letter-spacing: 2px;
     @include desktop {
+      margin-bottom: 20px;
       font-size: 2.5rem;
       letter-spacing: 4px;
     }
