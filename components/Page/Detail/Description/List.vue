@@ -16,7 +16,7 @@
 <style lang="scss" scoped>
 @import "~assets/scss/layout/_layout.scss";
 @import "~assets/scss/object/component/_container.scss";
-@import "~assets/scss/object/component/_descriptionList.scss";
+
 .p-description {
   &__list {
     margin-bottom: 20px;
