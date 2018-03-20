@@ -1,21 +1,19 @@
 <template>
   <div class="p-case__list">
-    <div class="p-case__example">
-      <div class="p-case__exampleIcon">制作</div>
-      <div class="p-case__exampleTitleWrap">
-        <div class="p-case__exampleTitle">全行程を社内で</div>
+    <div class="p-case__listContents">
+      <div class="p-case__listHeading">
+        <div class="p-case__listHeadingDomain">制作</div>
+        <div class="p-case__listHeadinglistTitle">端的に。ドメインを明示的に</div>
       </div>
-      <div class="p-case__exampleInner">
-        <p class="p-case__exampleText">Webだけでなく。印刷物なども対応可能で幅広い販促をサポートします（メリットを伝える）Webだけでなく。印刷物なども対応可能で幅広い販促をサポートします（メリットを伝える）</p>
-      </div>
-    </div>
-    <div class="p-case__detail">
-      <div class="p-case__detailInner">
-        <div class="p-case__detailDrawing"></div>
-        <p class="p-case__detailText">「領域」に関連する制作実績を見る</p>
-        <a class="p-case__detailIcon" href=""></a>
+      <div class="p-case__listBody">
+        <div class="p-case__listMelit">Webだけでなく。印刷物なども対応可能で幅広い販促をサポートします（メリットを伝える）Webだけでなく。印刷物なども対応可能で幅広い販促をサポートします（メリットを伝える）</div>
       </div>
     </div>
+    <a class="p-case__listLink" href="#">
+      <div class="p-case__listLinkIcon"></div>
+      <div class="p-case__listLinkText">「領域」に関連する制作実績を見る</div>
+      <div class="p-case__listLinkDeco"></div>
+    </a>
   </div>
 </template>
 <script>
@@ -26,83 +24,128 @@
 
 .p-case {
   &__list {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 30px;
     @include desktop {
-      width: 30%;
-      margin-bottom: 90px;
+      max-width: 32%;
     }
   }
-  &__example {
-    position: relative;
-    background-color: #ffffff;
+  &__listContents {
     margin-bottom: 10px;
-    &Icon {
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: #c3504f;
-      color: #ffffff;
-      text-align: center;
-      line-height: 55px;
-      height: 55px;
-      width: 55px;
-      font-size: 18px;
-      @include desktop {
-        line-height: 75px;
-        height: 75px;
-        width: 75px;
-        font-size: 25px;
-      }
-    }
-    &TitleWrap {
-      height: 55px;
-      display: table-cell;
-      vertical-align: middle;
-      @include desktop {
-        height: 75px;
-      }
-    }
-    &Title {
-      padding-left: 65px;
-      font-weight: bold;
-      font-size: 20px;
-      @include desktop {
-        padding-left: 85px;
-        font-size: 24px;
-      }
-    }
-    &Inner {
-      padding: 10px 30px;
-    }
-    &Text {
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 30px;
+    background: #fff;
+  }
+  &__listHeading {
+    display: table;
+    margin-bottom: 20px;
+  }
+  &__listHeadingDomain {
+    display: table-cell;
+    box-sizing: border-box;
+    min-width: 60px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    background: #c3504f;
+
+    @include desktop {
+      min-width: 80px;
+      height: 80px;
+      font-size: 2.5rem;
+      font-weight: normal;
     }
   }
-  &__detail {
-    background-color: #ffffff;
+  &__listHeadinglistTitle {
+    display: table-cell;
+    padding-left: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.4;
+    vertical-align: middle;
+    @include desktop {
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 2.4rem;
+    }
+  }
+  &__listBody {
+    padding: 0 30px 20px;
+  }
+  &__listIcons {
+    margin-bottom: 20px;
+    width: 100%;
+    background: url("http://placehold.it/600x300");
+    background-position: center;
+    background-size: cover;
+
+    &::before {
+      display: block;
+      content: "";
+      padding: 20%;
+      @include desktop {
+        padding: 10%;
+      }
+    }
+  }
+  &__listMelit {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    @include desktop {
+      font-size: 1.7rem;
+    }
+  }
+  &__listDescription {
+    line-height: 2.2;
+    @include desktop {
+      line-height: 2;
+    }
+  }
+
+  &__listLink {
+    display: table;
+    margin-bottom: 50px;
+    padding: 20px;
+    width: calc(100% - 40px);
+    background: #fff;
+    text-decoration: none;
+    color: #47494e;
     position: relative;
-    &Inner {
-      padding: 30px;
+
+    @include desktop {
+      margin-bottom: 0;
     }
-    &Drawing {
-      display: inline-block;
-      height: 55px;
-      width: 55px;
-      background: url("http://placehold.it/55x55") no-repeat; // 現在仮画像
-      background-size: cover;
+
+    &:hover {
+      opacity: 0.9;
+      .p-case__listLinkDeco::after {
+        right: 3px;
+        transition: all 0.5s;
+      }
     }
-    &Text {
-      display: inline-block;
-      width: 60%;
-      padding: 0 20px;
-      font-size: 17px;
-      line-height: 27px;
-    }
-    &Icon {
+  }
+  &__listLinkIcon {
+    display: table-cell;
+    width: 25%;
+    vertical-align: middle;
+    text-align: left;
+    background: url("http://placehold.it/200x200");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &__listLinkText {
+    display: table-cell;
+    padding-left: 10px;
+    width: 60%;
+    vertical-align: middle;
+  }
+  &__listLinkDeco {
+    display: table-cell;
+
+    &::before {
+      content: "";
       position: absolute;
       bottom: 0;
       right: 0;
@@ -111,12 +154,21 @@
       border: 30px solid transparent;
       border-right: 30px solid #c3504f;
       border-bottom: 30px solid #c3504f;
-      &:after {
-        content: "→";
-        bottom: 0;
-        right: 0;
-        color: #ffffff;
-      }
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-image: url("/images/icon_arrow-white.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      transition: all 0.5s;
     }
   }
 }

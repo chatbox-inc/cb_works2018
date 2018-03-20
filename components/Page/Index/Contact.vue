@@ -168,7 +168,7 @@ export default {};
       display: inline-block;
       width: 1.4rem;
       height: 1.4rem;
-      background-image: url("/images/icon_arrow.svg");
+      background-image: url("/images/icon_angle.svg");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;

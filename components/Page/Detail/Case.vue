@@ -4,7 +4,7 @@
       <div class="p-case__backgroundFilter">
         <div class="p-case__inner">
           <h2 class="p-case__title">Web制作事例</h2>
-          <div class="p-case__text" v-html=" marked('chatboxの具体的な事例をご紹介します。（それぞれどういう事例があるかをざっくりしたライティング）気になる分野は以下のボタンより飛んで下さい。制作実績の一覧は[こちら]()から閲覧いただけます。（こちらのところは全ての制作実績が閲覧できる実績の一覧のページへリンクを貼る）') "></div>
+          <div class="p-case__description" v-html=" marked('chatboxの具体的な事例をご紹介します。（それぞれどういう事例があるかをざっくりしたライティング）気になる分野は以下のボタンより飛んで下さい。制作実績の一覧は[こちら](https://chatbox-inc.com/)から閲覧いただけます。（こちらのところは全ての制作実績が閲覧できる実績の一覧のページへリンクを貼る）') "></div>
           <div class="p-case__lists">
             <case-list v-for="key in 3" :key="key"></case-list>
           </div>
@@ -21,7 +21,7 @@ import marked from "marked";
 export default {
   computed: {
     thumbStyle() {
-      return { backgroundImage: `url('/images/serviceHeading_create.jpg')` }; // 現在仮画像
+      return { backgroundImage: `url('/images/detail/case_creation.jpg')` }; // 現在仮画像
     }
   },
   components: {
@@ -52,33 +52,37 @@ export default {
     background: rgba(195, 80, 79, 0.7);
   }
   &__inner {
-    @include c-container;
+    @include c-detailContainer;
+    padding-top: 50px;
+    @include desktop {
+      padding-top: 50px;
+      padding-bottom: 90px;
+    }
   }
   &__title {
-    color: #ffffff;
-    text-align: center;
-    font-weight: bold;
-    line-height: 120px;
-    font-size: 25px;
-  }
-  &__text {
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 36px;
     margin-bottom: 20px;
-    @include desktop {
-      margin-bottom: 30px;
-    }
-    a {
-      color: #ffffff;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  &__description {
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 36px;
+    margin-bottom: 30px;
+
+    /deep/ a {
+      color: #fff;
     }
   }
   &__lists {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+
     @include desktop {
       flex-wrap: nowrap;
+      justify-content: space-between;
     }
   }
 }
