@@ -21,7 +21,7 @@ import marked from "marked";
 export default {
   computed: {
     thumbStyle() {
-      return { backgroundImage: `url('/images/serviceHeading_create.jpg')` }; // 現在仮画像
+      return { backgroundImage: `url('/images/detail/case_creation.jpg')` }; // 現在仮画像
     }
   },
   components: {
