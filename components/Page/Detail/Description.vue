@@ -77,7 +77,7 @@ export default {
   &__headingTitle {
     font-size: 3rem;
     font-weight: bold;
-    margin-right: .5em;
+    margin-right: 0.5em;
     @include desktop {
       display: inline-block;
       line-height: 200px;

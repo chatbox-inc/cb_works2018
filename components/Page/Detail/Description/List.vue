@@ -19,8 +19,8 @@
 .p-description {
   &__list {
     margin-bottom: 20px;
-    border-right: 2px solid #C3504F;
-    background: #FAF7F7;
+    border-right: 2px solid #c3504f;
+    background: #faf7f7;
     @include desktop {
       margin-bottom: 40px;
     }
@@ -41,13 +41,12 @@
     vertical-align: middle;
     font-size: 1.4rem;
     color: #fff;
-    background: #C3504F;
+    background: #c3504f;
 
     @include desktop {
       min-width: 80px;
       height: 80px;
       font-size: 2.5rem;
-
     }
   }
   &__listHeadinglistTitle {
@@ -86,7 +85,7 @@
   &__listMelit {
     margin-bottom: 10px;
     font-size: 1.6rem;
-    font-weight:  bold;
+    font-weight: bold;
     letter-spacing: 2px;
     @include desktop {
       font-size: 1.7rem;
