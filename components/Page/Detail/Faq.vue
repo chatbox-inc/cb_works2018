@@ -45,38 +45,37 @@
   &__lists {
   }
   &__item {
-      margin-bottom: 40px;
+    margin-bottom: 40px;
   }
   &__question {
     box-sizing: border-box;
     margin-bottom: 1em;
-    padding: .8em 2em;
+    padding: 0.8em 2em;
     border-radius: 1000px;
     min-width: 100%;
     font-size: 1.6rem;
     font-weight: bold;
-      line-height: 1.8;
+    line-height: 1.8;
     color: #c3504f;
     background: #faf7f7;
 
-      @include desktop {
-          padding: .5em 3em;
-          line-height: 2;
-      }
+    @include desktop {
+      padding: 0.5em 3em;
+      line-height: 2;
+    }
 
-      &::before {
-          margin-right: 1em;
-          content: "Q";
-      }
-
+    &::before {
+      margin-right: 1em;
+      content: "Q";
+    }
   }
   &__answer {
-  padding: 0 2em;
+    padding: 0 2em;
     font-size: 1.5rem;
     line-height: 2;
-      @include desktop {
-          padding: 0 3em;
-      }
+    @include desktop {
+      padding: 0 3em;
+    }
   }
 }
 </style>
