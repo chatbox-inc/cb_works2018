@@ -52,8 +52,12 @@ export default {
     background: rgba(195, 80, 79, 0.7);
   }
   &__inner {
-    @include c-container;
+    @include c-detailContainer;
     padding-top: 50px;
+    @include desktop {
+      padding-top: 50px;
+      padding-bottom: 90px;
+    }
   }
   &__title {
     margin-bottom: 20px;
@@ -75,9 +79,10 @@ export default {
   &__lists {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+
     @include desktop {
       flex-wrap: nowrap;
+      justify-content: space-between;
     }
   }
 }
