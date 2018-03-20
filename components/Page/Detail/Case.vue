@@ -38,6 +38,7 @@ export default {
 <style lang="scss" scoped>
 @import "~assets/scss/layout/_layout.scss";
 @import "~assets/scss/object/component/_container.scss";
+@import "~assets/scss/object/component/_title.scss";
 
 .p-case {
   margin-bottom: 50px;
@@ -60,11 +61,7 @@ export default {
     }
   }
   &__title {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #fff;
+    @include secTitle(#fff);
   }
   &__description {
     color: #fff;
