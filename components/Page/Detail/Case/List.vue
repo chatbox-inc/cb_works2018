@@ -105,7 +105,7 @@
 
   &__listLink {
     display: table;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     padding: 20px;
     width: calc(100% - 40px);
     background: #fff;
