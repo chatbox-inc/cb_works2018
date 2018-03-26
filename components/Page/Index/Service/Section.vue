@@ -222,12 +222,14 @@ export default {
     background: #fbf3f3;
     box-sizing: border-box;
     position: relative;
+    min-height: 83px;
 
     @include desktop {
       width: auto;
       margin: 0 2px;
       font-size: 1.5rem;
       max-width: 23%;
+      min-height: 70px;
     }
 
     &:not(:last-of-type) {
